@@ -1,6 +1,9 @@
 import React from "react";
+import Footer from "../common/footer";
 import Header from './../common/header';
 import Sidebar from './../common/sidebar';
+
+
 import { Preloader, Bars } from 'react-preloader-icon';
 
 const adminLayout = (ChildComponent) => {
@@ -42,6 +45,8 @@ const adminLayout = (ChildComponent) => {
                     <div className="container-fluid content-container">
                         <ChildComponent {...this.props} />
                     </div>
+                     {/* {Footer navegation} */}
+                     <Footer />
                 </div>
             </div>
         }

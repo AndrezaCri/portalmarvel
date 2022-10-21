@@ -7,7 +7,10 @@ import ResetPassword from './pages/auth/ResetPassword';
 import ProfilePage from './pages/profile/ProfilePage';
 import ChangePasswordPage from './pages/profile/ChangePasswordPage';
 import UserPreferencesPage from './pages/profile/UserPreferencesPage'
-import AdminBlankPage from './pages/AdminBlankPage';
+import UniversoMarvelPage from './pages/UniversoMarvelPage';
+import AmigosMarvelPage from './pages/AmigosMarvelPage';
+import CadastrodePersonagemPage from './pages/CadastrodePersonagemPage';
+
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 
 function App() {
@@ -21,7 +24,9 @@ function App() {
                 <Route exact path='/change-password' element={<ChangePasswordPage/>} />
                 <Route exact path='/preferences' element={<UserPreferencesPage/>} />
                 <Route exact path='/typography' element={<TypographyPage/>} />
-                <Route exact path='/blank-page' element={<AdminBlankPage/>} />
+                <Route exact path='/amigosmarvel' element={<AmigosMarvelPage/>} />
+                <Route exact path='/universomarvel' element={<UniversoMarvelPage/>}/>
+                <Route exact path='/cadastrodepersonagem' element={<CadastrodePersonagemPage/>}/>
             </Routes>  
         </Router>
     )

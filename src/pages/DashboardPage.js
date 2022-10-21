@@ -5,79 +5,56 @@ class DashboardPage extends React.Component {
     constructor(props){
         super(props);
 
-        this.state = {}
+        this.state = {
+          error: null,
+          isLoaded: false,
+          items: []
+        };
     }
 
-    render(){
-        return <>
-            <div className="row">
-        <div className="col-xl-3 col-sm-6 mb-3">
-          <div className="card text-white bg-primary o-hidden h-100">
-            <div className="card-body">
-              <div className="card-body-icon">
-                <i className="fa fa-fw fa-comments"></i>
-              </div>
-              <div className="mr-5">26 New Messages!</div>
-            </div>
-            <a className="card-footer text-white clearfix small z-1" href="#">
-              <span className="float-left">View Details</span>
-              <span className="float-right">
-                <i className="fa fa-angle-right"></i>
-              </span>
-            </a>
-          </div>
-        </div>
-        <div className="col-xl-3 col-sm-6 mb-3">
-          <div className="card text-white bg-warning o-hidden h-100">
-            <div className="card-body">
-              <div className="card-body-icon">
-                <i className="fa fa-fw fa-list"></i>
-              </div>
-              <div className="mr-5">11 New Tasks!</div>
-            </div>
-            <a className="card-footer text-white clearfix small z-1" href="#">
-              <span className="float-left">View Details</span>
-              <span className="float-right">
-                <i className="fa fa-angle-right"></i>
-              </span>
-            </a>
-          </div>
-        </div>
-        <div className="col-xl-3 col-sm-6 mb-3">
-          <div className="card text-white bg-success o-hidden h-100">
-            <div className="card-body">
-              <div className="card-body-icon">
-                <i className="fa fa-fw fa-shopping-cart"></i>
-              </div>
-              <div className="mr-5">123 New Orders!</div>
-            </div>
-            <a className="card-footer text-white clearfix small z-1" href="#">
-              <span className="float-left">View Details</span>
-              <span className="float-right">
-                <i className="fa fa-angle-right"></i>
-              </span>
-            </a>
-          </div>
-        </div>
-        <div className="col-xl-3 col-sm-6 mb-3">
-          <div className="card text-white bg-danger o-hidden h-100">
-            <div className="card-body">
-              <div className="card-body-icon">
-                <i className="fa fa-fw fa-support"></i>
-              </div>
-              <div className="mr-5">13 New Tickets!</div>
-            </div>
-            <a className="card-footer text-white clearfix small z-1" href="#">
-              <span className="float-left">View Details</span>
-              <span className="float-right">
-                <i className="fa fa-angle-right"></i>
-              </span>
-            </a>
-          </div>
-        </div>
-      </div>
-        </>
-    }
-}
+    componentDidMount() {
+    fetch(`https://gateway.marvel.com/v1/public/characters?ts=1662070501&orderBy=name&limit=12&apikey=24525c46d4e6a5abdc9c7f585f36ca61&hash=62ff6493d782c8c8a031efde7d61e64c`)
+        .then(res => res.json())
+        .then(
+          (result) => {
+            this.setState({
+              isLoaded: true, 
+              items: result.data.results
+            });          
+            console.log(result.data.results);
+          },
+          (error) => {
+            this.setState({
+              isLoaded: true,
+              error
+            });
+          }
+)}
+        render(){
+          const { error, isLoaded, items } = this.state;
 
+           if (error) {
+              return <div>Error: {error.message}</div>;
+            } else if (!isLoaded) {
+              return <div>Loading...</div>;
+            }else {
+              return (
+                  <div className="row">
+                    {items.map((item, index) => (
+                    <div className="col-xl-3 col-sm-6 mb-3" key={index}>
+                      <div className="card text-white bg-black o-hidden h-100">
+                          <div className="card-body">
+                            <img className="imageme-Herois" alt="Imagens Heroes" src={item.thumbnail.path+'.'+item.thumbnail.extension} />
+                          </div> 
+                          <span className="float-left ">{item.name}</span>
+                        
+                      </div>
+                    </div>
+                    ))}
+                  </div>  
+
+            )}
+          }
+       };
+      
 export default adminLayout(DashboardPage);
