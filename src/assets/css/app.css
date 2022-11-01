@@ -707,14 +707,11 @@ span.float-left{
   background-color: black;
 }
 
- input:invalid  {
-  background-color: ivory;
-  border: none;
-  outline: 2px solid red;
-  border-radius: 5px;
+  .error{
+  color: red;
 }
 
-textarea:invalid  {
+/* textarea:invalid  {
   background-color: ivory;
   border: none;
   outline: 2px solid red;
@@ -725,14 +722,14 @@ button:invalid  {
   border: none;
   outline: 2px solid red;
   border-radius: 5px;
-}
-input.number:-moz-submit-invalid  {
+} */
+/* input.number:-moz-submit-invalid  {
   background-color: ivory;
   border: none;
   outline: 2px solid red;
   border-radius: 5px;
 }
-.button:active{
+.button:active{ */
 
-}                               
+                             
                                

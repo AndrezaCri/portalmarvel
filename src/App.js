@@ -1,5 +1,6 @@
 import 'font-awesome/css/font-awesome.min.css';
 import './assets/css/app.css';
+import React from "react"; 
 import DashboardPage from './pages/DashboardPage';
 import TypographyPage from './pages/TypographyPage'
 import LoginPage from './pages/auth/LoginPage'
@@ -10,6 +11,7 @@ import UserPreferencesPage from './pages/profile/UserPreferencesPage'
 import UniversoMarvelPage from './pages/UniversoMarvelPage';
 import AmigosMarvelPage from './pages/AmigosMarvelPage';
 import CadastrodePersonagemPage from './pages/CadastrodePersonagemPage';
+
 
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 
