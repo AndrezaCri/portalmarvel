@@ -707,29 +707,49 @@ span.float-left{
   background-color: black;
 }
 
-  .error{
+.error{
   color: red;
 }
 
-/* textarea:invalid  {
-  background-color: ivory;
-  border: none;
-  outline: 2px solid red;
-  border-radius: 5px;
+.titlepantera{
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  flex-wrap: wrap;
+  font-size: 32px;
+  margin: 20px;
+
 }
-button:invalid  {
-  background-color: ivory;
-  border: none;
-  outline: 2px solid red;
-  border-radius: 5px;
-} */
-/* input.number:-moz-submit-invalid  {
-  background-color: ivory;
-  border: none;
-  outline: 2px solid red;
-  border-radius: 5px;
+
+.titleestreia{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  color: #555;
+
 }
-.button:active{ */
+iframe{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.site{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  color: #F57F17;
+  margin: 20px;
+  
+}
+
+
+
 
                              
                                

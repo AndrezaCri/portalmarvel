@@ -2,7 +2,6 @@ import React, { useEffect, useState  } from "react";
 import adminLayout from "../hoc/adminLayout";
 import { useFormInputValidation } from "react-form-input-validation";
 
-
 const ValidationForm2 = () => {
     const [isDisabled, setDisabled] = useState(true);
 
@@ -33,7 +32,7 @@ const ValidationForm2 = () => {
           console.log("MAKE AN API CALL ==> useEffect", fields, errors, form);
         }
     }, [])
-
+      
         return<div>
             <h1 className="titulo-marvel">Cadastro de Personagem</h1>
             
@@ -99,7 +98,7 @@ const ValidationForm2 = () => {
                                     </div>  
                                 </div>                                                                      
                             </div> 
-                            <div className="colmb-3 col  form-check">
+                            <div className="colmb-3 col">
                                 <label className="form-label">Habilidade:</label>
                             </div>
                             <div className="colmb-3 col  form-check">
@@ -142,32 +141,15 @@ const ValidationForm2 = () => {
                             </div>
 
                             <button type="submit" className="row btn btn-dark moz submit-invalid" 
-                                name="cadastrar"  disabled={isDisabled}>Cadastras
+                                name="cadastrar"  disabled={isDisabled}>cadastrar
                             </button>
                         </form>    
                         
             </div>
-            <div className="alert alert-secondary alert-dismissible fade show" role="alert">
-                            <p> Nós usamos cookies e outras tecnologias semelhantes para melhorar a sua experiência em nossos serviços, 
-                                personalizar publicidade e recomendar conteúdo de seu interesse. 
-                                Ao utilizar nossos serviços, você concorda com tal monitoramento. 
-                                Informamos ainda que atualizamos nossa Política de Privacidade. Conheça nosso Portal da Privacidade e veja a nossa nova Política.
-                            </p>
-                            <a href="#" className="alert-link">
-                                <button type="button" className="btn btn-dark moz submit-invalid" 
-                                    aria-label="Close" data-bs-dismiss="alert" set-Cookie="1000"
-                                    disabled="" required>Aceitar
-                                
-                                </button>
-                            </a>   
-                              
-                                
-                            
-
-                        </div>
+            
             
         </div>
-    
+  
     
      
 };

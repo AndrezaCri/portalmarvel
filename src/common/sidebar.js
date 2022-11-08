@@ -26,12 +26,12 @@ class Sidebar extends React.Component {
                     </li>
                     <li className="mb-1">
                         <Link tag="a" className="" to="/universomarvel">
-                             Univeso Marvel
+                            Univeso Marvel
                         </Link>
                     </li>
                     <li className="mb-1">
-                        <Link tag="a" className="" to="/viloessmarvel">
-                            Vilões Marvel
+                        <Link tag="a" className="" to="/lançamentopanteranegra">
+                            Lançamento
                         </Link>
                     </li>
                     <li className="mb-1">
