@@ -17,12 +17,12 @@ class Header extends React.Component {
                     <ul className="navbar-nav ms-auto mt-2 mt-lg-0">
                         {/* <li className="nav-item"><a data-bs-toggle="modal" data-bs-target="#add-lead-modal"  className="nav-link highlighted-text" href="#!">Add lead</a></li> */}
                         <li className="nav-item dropdown notifications">
-                            <a className="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i className="fa fa-bell"></i></a>
+                            <a className="nav-link dropdown-toggle" id="navbarDropdown" href=" "role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i className="fa fa-bell"></i></a>
                             <div className="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                                <a className="dropdown-item" href="#!">Action</a>
-                                <a className="dropdown-item" href="#!">Another action</a>
+                                <a className="dropdown-item" href="" >Action</a>
+                                <a className="dropdown-item" href="">Another action</a>
                                 <div className="dropdown-divider"></div>
-                                <a className="dropdown-item" href="#!">Something else here</a>
+                                <a className="dropdown-item" href="/">Something else here</a>
                             </div>
                         </li>
                     </ul>

@@ -65,7 +65,6 @@ const ValidationForm2 = () => {
                                 <label htmlFor="exampleInputEmail1" className="form-label">História do Personagem</label>
                                         <div className="input-group mb-3">
                                             <textarea 
-
                                                 type="text" id="formHistoria" className="form-control" 
                                                 minLength={4} maxLength={500} 
                                                 placeholder="História do Personagem" 
@@ -74,7 +73,6 @@ const ValidationForm2 = () => {
                                                 onBlur={form.handleBlurEvent}
                                                 onChange={form.handleChangeEvent}
                                                 value={fields.historia}>
-
                                             </textarea>   
                                         </div>  
                                         <div className="error">
@@ -104,7 +102,7 @@ const ValidationForm2 = () => {
                             <div className="colmb-3 col  form-check">
                                <input type="checkbox" className="form-check-input" 
                                     id="exampleCheck1" 
-                                     name="habilidade"
+                                    name="habilidade"
                                     onChange={form.handleChangeEvent}
                                     value="Vitalidade"
                                 />
