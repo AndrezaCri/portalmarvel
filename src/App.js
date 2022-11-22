@@ -31,7 +31,7 @@ function App() {
                 <Route exact path='/amigosmarvel' element={<AmigosMarvelPage/>} />
                 <Route exact path='/universomarvel' element={<UniversoMarvelPage/>}/>
                 <Route exact path='/cadastrodepersonagem' element={<CadastrodePersonagemPage/>}/>
-                <Route exact path='/panteranegra' element={<PanteraNegra/>}/>
+                <Route exact path='/panteranegra' element ={<PanteraNegra/>}/>
                 <Route exact path='/rotaDeheroes' element={<RotaDeHeroes/>}/>
             </Routes>  
         </Router>
