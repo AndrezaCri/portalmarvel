@@ -41,12 +41,12 @@ class Sidebar extends React.Component {
                     </li>
                     <li className="mb-1">
                         <Link tag="a" className="" to="/cadastrodepersonagem">
-                            Rota de Herões
+                             Cadastro de Personagem
                         </Link>
                     </li>
                     <li className="mb-1">
-                        <Link tag="a" className="" to="/cadastrodepersonagem">
-                             Cadastro de Personagem
+                        <Link tag="a" className="" to="/rotadeheroes">
+                            Rota de Herões
                         </Link>
                     </li>
                     <li className="border-top my-3"></li>

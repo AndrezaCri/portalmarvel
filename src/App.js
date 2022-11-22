@@ -12,6 +12,7 @@ import UniversoMarvelPage from './pages/UniversoMarvelPage';
 import AmigosMarvelPage from './pages/AmigosMarvelPage';
 import CadastrodePersonagemPage from './pages/CadastrodePersonagemPage';
 import PanteraNegra from './pages/PanteraNegra';
+import RotaDeHeroes from './pages/RotaDeHeroes';
 
 
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
@@ -31,6 +32,7 @@ function App() {
                 <Route exact path='/universomarvel' element={<UniversoMarvelPage/>}/>
                 <Route exact path='/cadastrodepersonagem' element={<CadastrodePersonagemPage/>}/>
                 <Route exact path='/panteranegra' element={<PanteraNegra/>}/>
+                <Route exact path='/rotaDeheroes' element={<RotaDeHeroes/>}/>
             </Routes>  
         </Router>
     )
