@@ -7,11 +7,55 @@ class LoginPage extends React.Component {
     constructor(props){
         super(props);
 
-        this.state = {};
-    }
-
-    render(){
+       
+        this.state = {
+            aceites: false
+        };
+        
+    }    
+        setCookie = () => {
+            localStorage.setItem('username', "aceite");
+            this.setState(() => ({
+                aceites: true
+            }));
+        }
+        
+        onClick = () => {
+            this.setCookie(); 
+        };
+        
+        componentDidMount(){
+            if(localStorage.getItem('username')){
+                this.setState(() => ({
+                    aceites: true
+                }));
+            }
+        };
+        
+        renderCookie(){ 
+            if(!this.state.aceites) {
+                console.log("ok")
+                return<div  className="alert alert-secondary alert-dismissible fade show" role="alert">
+                <p> Nós usamos cookies e outras tecnologias semelhantes para melhorar a sua experiência em nossos serviços, 
+                    personalizar publicidade e recomendar conteúdo de seu interesse. 
+                    Ao utilizar nossos serviços, você concorda com tal monitoramento. 
+                    Informamos ainda que atualizamos nossa Política de Privacidade. Conheça nosso Portal da Privacidade e veja a nossa nova Política.
+                </p>
+                    <button type="button" className="btn btn-dark moz submit-invalid" 
+                        aria-label="Close" data-bs-dismiss="alert" 
+                        disabled="" required 
+                        onClick={() => this.setCookie(true)} 
+                        > Aceitar
+                    </button>
+                </div>
+            }
+        }
+         
+        render(){
         return <>
+        <div  className="row alert alert-secondary alert-dismissible fade show" role="alert">
+        </div>
+        
             <form className="login-form">
                 <div className="d-flex align-items-center my-4">
                     <h1 className="text-center fw-normal mb-0 me-3">Sign In</h1>
@@ -47,7 +91,9 @@ class LoginPage extends React.Component {
                         className="link-danger">Register</a></p>
                 </div>
             </form>
+            {this.renderCookie()}
         </>
+        
     }
 }
 

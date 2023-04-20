@@ -73,9 +73,9 @@ import ModalComponent from "../components/ModalComponent";
                                     <div className="dropdown table-action-dropdown">
                                         <button className="btn btn-secondary btn-sm dropdown-toggle" type="button" id="dropdownMenuButtonSM" data-bs-toggle="dropdown" aria-expanded="false"><i className="fa fa-ellipsis-v" aria-hidden="true"></i></button>
                                         <ul className="dropdown-menu" aria-labelledby="dropdownMenuButtonSM">
-                                            <li><a className="dropdown-item" href="#"><i className="fa fa-pencil" aria-hidden="true"></i>&nbsp;Edit</a></li>
+                                            <li><a className="dropdown-item" href="/"><i className="fa fa-pencil" aria-hidden="true"></i>&nbsp;Edit</a></li>
                                             <div className="dropdown-divider"></div>
-                                            <li><a className="dropdown-item text-danger" href="#"><i className="fa fa-trash" aria-hidden="true"></i>&nbsp;Delete</a></li>
+                                            <li><a className="dropdown-item text-danger" href="/"><i className="fa fa-trash" aria-hidden="true"></i>&nbsp;Delete</a></li>
                                         </ul>
                                     </div>
                                 </td>
@@ -91,9 +91,9 @@ import ModalComponent from "../components/ModalComponent";
                                     <div className="dropdown table-action-dropdown">
                                         <button className="btn btn-secondary btn-sm dropdown-toggle" type="button" id="dropdownMenuButtonSM" data-bs-toggle="dropdown" aria-expanded="false"><i className="fa fa-ellipsis-v" aria-hidden="true"></i></button>
                                         <ul className="dropdown-menu" aria-labelledby="dropdownMenuButtonSM">
-                                            <li><a className="dropdown-item" href="#"><i className="fa fa-pencil" aria-hidden="true"></i>&nbsp;Edit</a></li>
+                                            <li><a className="dropdown-item" href="/"><i className="fa fa-pencil" aria-hidden="true"></i>&nbsp;Edit</a></li>
                                             <div className="dropdown-divider"></div>
-                                            <li><a className="dropdown-item text-danger" href="#"><i className="fa fa-trash" aria-hidden="true"></i>&nbsp;Delete</a></li>
+                                            <li><a className="dropdown-item text-danger" href="/"><i className="fa fa-trash" aria-hidden="true"></i>&nbsp;Delete</a></li>
                                         </ul>
                                     </div>
                                 </td>
@@ -109,9 +109,9 @@ import ModalComponent from "../components/ModalComponent";
                                     <div className="dropdown table-action-dropdown">
                                         <button className="btn btn-secondary btn-sm dropdown-toggle" type="button" id="dropdownMenuButtonSM" data-bs-toggle="dropdown" aria-expanded="false"><i className="fa fa-ellipsis-v" aria-hidden="true"></i></button>
                                         <ul className="dropdown-menu" aria-labelledby="dropdownMenuButtonSM">
-                                            <li><a className="dropdown-item" href="#"><i className="fa fa-pencil" aria-hidden="true"></i>&nbsp;Edit</a></li>
+                                            <li><a className="dropdown-item" href="/"><i className="fa fa-pencil" aria-hidden="true"></i>&nbsp;Edit</a></li>
                                             <div className="dropdown-divider"></div>
-                                            <li><a className="dropdown-item text-danger" href="#"><i className="fa fa-trash" aria-hidden="true"></i>&nbsp;Delete</a></li>
+                                            <li><a className="dropdown-item text-danger" href="/"><i className="fa fa-trash" aria-hidden="true"></i>&nbsp;Delete</a></li>
                                         </ul>
                                     </div>
                                 </td>
@@ -127,9 +127,9 @@ import ModalComponent from "../components/ModalComponent";
                                     <div className="dropdown table-action-dropdown">
                                         <button className="btn btn-secondary btn-sm dropdown-toggle" type="button" id="dropdownMenuButtonSM" data-bs-toggle="dropdown" aria-expanded="false"><i className="fa fa-ellipsis-v" aria-hidden="true"></i></button>
                                         <ul className="dropdown-menu" aria-labelledby="dropdownMenuButtonSM">
-                                            <li><a className="dropdown-item" href="#"><i className="fa fa-pencil" aria-hidden="true"></i>&nbsp;Edit</a></li>
+                                            <li><a className="dropdown-item" href="/"><i className="fa fa-pencil" aria-hidden="true"></i>&nbsp;Edit</a></li>
                                             <div className="dropdown-divider"></div>
-                                            <li><a className="dropdown-item text-danger" href="#"><i className="fa fa-trash" aria-hidden="true"></i>&nbsp;Delete</a></li>
+                                            <li><a className="dropdown-item text-danger" href="/"><i className="fa fa-trash" aria-hidden="true"></i>&nbsp;Delete</a></li>
                                         </ul>
                                     </div>
                                 </td>
@@ -140,16 +140,16 @@ import ModalComponent from "../components/ModalComponent";
                 <nav className="table-bottom-center-pagination" aria-label="Page navigation example ">
                     <ul className="pagination">
                         <li className="page-item">
-                        <a className="page-link" href="#" aria-label="Previous">
+                        <a className="page-link" href="/" aria-label="Previous">
                             <span aria-hidden="true">&laquo;</span>
                             <span className="sr-only">Previous</span>
                         </a>
                         </li>
-                        <li className="page-item"><a className="page-link" href="#">1</a></li>
-                        <li className="page-item"><a className="page-link" href="#">2</a></li>
-                        <li className="page-item"><a className="page-link" href="#">3</a></li>
+                        <li className="page-item"><a className="page-link" href="/">1</a></li>
+                        <li className="page-item"><a className="page-link" href="/">2</a></li>
+                        <li className="page-item"><a className="page-link" href="/">3</a></li>
                         <li className="page-item">
-                        <a className="page-link" href="#" aria-label="Next">
+                        <a className="page-link" href="/" aria-label="Next">
                             <span aria-hidden="true">&raquo;</span>
                             <span className="sr-only">Next</span>
                         </a>
@@ -199,11 +199,11 @@ import ModalComponent from "../components/ModalComponent";
                                         </button>
                                         <ul className="dropdown-menu" aria-labelledby="dropdownMenuButtonSM">
                                         <li><h6 className="dropdown-header">Dropdown header</h6></li>
-                                        <li><a className="dropdown-item" href="#">Action</a></li>
-                                        <li><a className="dropdown-item" href="#">Another action</a></li>
-                                        <li><a className="dropdown-item" href="#">Something else here</a></li>
+                                        <li><a className="dropdown-item" href="/">Action</a></li>
+                                        <li><a className="dropdown-item" href="/">Another action</a></li>
+                                        <li><a className="dropdown-item" href="/">Something else here</a></li>
                                         <li><hr className="dropdown-divider" /></li>
-                                        <li><a className="dropdown-item" href="#">Separated link</a></li>
+                                        <li><a className="dropdown-item" href="/">Separated link</a></li>
                                         </ul>
                                     </div>
                                     <div className="dropdown">
@@ -212,11 +212,11 @@ import ModalComponent from "../components/ModalComponent";
                                         </button>
                                         <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                         <li><h6 className="dropdown-header">Dropdown header</h6></li>
-                                        <li><a className="dropdown-item" href="#">Action</a></li>
-                                        <li><a className="dropdown-item" href="#">Another action</a></li>
-                                        <li><a className="dropdown-item" href="#">Something else here</a></li>
+                                        <li><a className="dropdown-item" href="/">Action</a></li>
+                                        <li><a className="dropdown-item" href="/">Another action</a></li>
+                                        <li><a className="dropdown-item" href="/">Something else here</a></li>
                                         <li><hr className="dropdown-divider" /></li>
-                                        <li><a className="dropdown-item" href="#">Separated link</a></li>
+                                        <li><a className="dropdown-item" href="/">Separated link</a></li>
                                         </ul>
                                     </div>
                                     <div className="dropdown">
@@ -225,11 +225,11 @@ import ModalComponent from "../components/ModalComponent";
                                         </button>
                                         <ul className="dropdown-menu" aria-labelledby="dropdownMenuButtonLG">
                                         <li><h6 className="dropdown-header">Dropdown header</h6></li>
-                                        <li><a className="dropdown-item" href="#">Action</a></li>
-                                        <li><a className="dropdown-item" href="#">Another action</a></li>
-                                        <li><a className="dropdown-item" href="#">Something else here</a></li>
+                                        <li><a className="dropdown-item" href="/">Action</a></li>
+                                        <li><a className="dropdown-item" href="/">Another action</a></li>
+                                        <li><a className="dropdown-item" href="/">Something else here</a></li>
                                         <li><hr className="dropdown-divider" /></li>
-                                        <li><a className="dropdown-item" href="#">Separated link</a></li>
+                                        <li><a className="dropdown-item" href="/">Separated link</a></li>
                                         </ul>
                                     </div>
                                     </div>
@@ -242,9 +242,9 @@ import ModalComponent from "../components/ModalComponent";
                                         <span className="visually-hidden">Toggle Dropdown</span>
                                     </button>
                                     <ul className="dropdown-menu">
-                                        <li><a className="dropdown-item" href="#">Action</a></li>
-                                        <li><a className="dropdown-item" href="#">Another action</a></li>
-                                        <li><a className="dropdown-item" href="#">Something else here</a></li>
+                                        <li><a className="dropdown-item" href="/">Action</a></li>
+                                        <li><a className="dropdown-item" href="/">Another action</a></li>
+                                        <li><a className="dropdown-item" href="/">Something else here</a></li>
                                     </ul>
                                     </div>
                                     {/* <!-- /btn-group --> */}
@@ -254,9 +254,9 @@ import ModalComponent from "../components/ModalComponent";
                                         <span className="visually-hidden">Toggle Dropdown</span>
                                     </button>
                                     <ul className="dropdown-menu">
-                                        <li><a className="dropdown-item" href="#">Action</a></li>
-                                        <li><a className="dropdown-item" href="#">Another action</a></li>
-                                        <li><a className="dropdown-item" href="#">Something else here</a></li>
+                                        <li><a className="dropdown-item" href="/">Action</a></li>
+                                        <li><a className="dropdown-item" href="/">Another action</a></li>
+                                        <li><a className="dropdown-item" href="/">Something else here</a></li>
                                     </ul>
                                     </div>
                                     {/* <!-- /btn-group --> */}
@@ -266,9 +266,9 @@ import ModalComponent from "../components/ModalComponent";
                                         <span className="visually-hidden">Toggle Dropdown</span>
                                     </button>
                                     <ul className="dropdown-menu">
-                                        <li><a className="dropdown-item" href="#">Action</a></li>
-                                        <li><a className="dropdown-item" href="#">Another action</a></li>
-                                        <li><a className="dropdown-item" href="#">Something else here</a></li>
+                                        <li><a className="dropdown-item" href="/">Action</a></li>
+                                        <li><a className="dropdown-item" href="/">Another action</a></li>
+                                        <li><a className="dropdown-item" href="/">Something else here</a></li>
                                     </ul>
                                     </div>
                                     {/* <!-- /btn-group --> */}
@@ -278,9 +278,9 @@ import ModalComponent from "../components/ModalComponent";
                                         <span className="visually-hidden">Toggle Dropdown</span>
                                     </button>
                                     <ul className="dropdown-menu">
-                                        <li><a className="dropdown-item" href="#">Action</a></li>
-                                        <li><a className="dropdown-item" href="#">Another action</a></li>
-                                        <li><a className="dropdown-item" href="#">Something else here</a></li>
+                                        <li><a className="dropdown-item" href="/">Action</a></li>
+                                        <li><a className="dropdown-item" href="/">Another action</a></li>
+                                        <li><a className="dropdown-item" href="/">Something else here</a></li>
                                     </ul>
                                     </div>
                                     {/* <!-- /btn-group --> */}
@@ -290,9 +290,9 @@ import ModalComponent from "../components/ModalComponent";
                                         <span className="visually-hidden">Toggle Dropdown</span>
                                     </button>
                                     <ul className="dropdown-menu">
-                                        <li><a className="dropdown-item" href="#">Action</a></li>
-                                        <li><a className="dropdown-item" href="#">Another action</a></li>
-                                        <li><a className="dropdown-item" href="#">Something else here</a></li>
+                                        <li><a className="dropdown-item" href="/">Action</a></li>
+                                        <li><a className="dropdown-item" href="/">Another action</a></li>
+                                        <li><a className="dropdown-item" href="/">Something else here</a></li>
                                     </ul>
                                     </div>
                                     {/* <!-- /btn-group --> */}
@@ -302,9 +302,9 @@ import ModalComponent from "../components/ModalComponent";
                                         <span className="visually-hidden">Toggle Dropdown</span>
                                     </button>
                                     <ul className="dropdown-menu">
-                                        <li><a className="dropdown-item" href="#">Action</a></li>
-                                        <li><a className="dropdown-item" href="#">Another action</a></li>
-                                        <li><a className="dropdown-item" href="#">Something else here</a></li>
+                                        <li><a className="dropdown-item" href="/">Action</a></li>
+                                        <li><a className="dropdown-item" href="/">Another action</a></li>
+                                        <li><a className="dropdown-item" href="/">Something else here</a></li>
                                     </ul>
                                     </div>
                                     {/* <!-- /btn-group --> */}
@@ -318,11 +318,11 @@ import ModalComponent from "../components/ModalComponent";
                                             </button>
                                             <ul className="dropdown-menu" aria-labelledby="dropendMenuButton">
                                             <li><h6 className="dropdown-header">Dropdown header</h6></li>
-                                            <li><a className="dropdown-item" href="#">Action</a></li>
-                                            <li><a className="dropdown-item" href="#">Another action</a></li>
-                                            <li><a className="dropdown-item" href="#">Something else here</a></li>
+                                            <li><a className="dropdown-item" href="/">Action</a></li>
+                                            <li><a className="dropdown-item" href="/">Another action</a></li>
+                                            <li><a className="dropdown-item" href="/">Something else here</a></li>
                                             <li><hr className="dropdown-divider" /></li>
-                                            <li><a className="dropdown-item" href="#">Separated link</a></li>
+                                            <li><a className="dropdown-item" href="/">Separated link</a></li>
                                             </ul>
                                         </div>
                                         <div className="dropup">
@@ -331,11 +331,11 @@ import ModalComponent from "../components/ModalComponent";
                                             </button>
                                             <ul className="dropdown-menu" aria-labelledby="dropupMenuButton">
                                             <li><h6 className="dropdown-header">Dropdown header</h6></li>
-                                            <li><a className="dropdown-item" href="#">Action</a></li>
-                                            <li><a className="dropdown-item" href="#">Another action</a></li>
-                                            <li><a className="dropdown-item" href="#">Something else here</a></li>
+                                            <li><a className="dropdown-item" href="/">Action</a></li>
+                                            <li><a className="dropdown-item" href="/">Another action</a></li>
+                                            <li><a className="dropdown-item" href="/">Something else here</a></li>
                                             <li><hr className="dropdown-divider" /></li>
-                                            <li><a className="dropdown-item" href="#">Separated link</a></li>
+                                            <li><a className="dropdown-item" href="/">Separated link</a></li>
                                             </ul>
                                         </div>
                                         <div className="dropstart">
@@ -344,11 +344,11 @@ import ModalComponent from "../components/ModalComponent";
                                             </button>
                                             <ul className="dropdown-menu" aria-labelledby="dropstartMenuButton">
                                             <li><h6 className="dropdown-header">Dropdown header</h6></li>
-                                            <li><a className="dropdown-item" href="#">Action</a></li>
-                                            <li><a className="dropdown-item" href="#">Another action</a></li>
-                                            <li><a className="dropdown-item" href="#">Something else here</a></li>
+                                            <li><a className="dropdown-item" href="/">Action</a></li>
+                                            <li><a className="dropdown-item" href="/">Another action</a></li>
+                                            <li><a className="dropdown-item" href="/">Something else here</a></li>
                                             <li><hr className="dropdown-divider" /></li>
-                                            <li><a className="dropdown-item" href="#">Separated link</a></li>
+                                            <li><a className="dropdown-item" href="/">Separated link</a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -362,10 +362,10 @@ import ModalComponent from "../components/ModalComponent";
                                         </button>
                                         <ul className="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownRightMenuButton">
                                         <li><h6 className="dropdown-header">Dropdown header</h6></li>
-                                        <li><a className="dropdown-item" href="#">Action</a></li>
-                                        <li><a className="dropdown-item" href="#">Another action</a></li>
+                                        <li><a className="dropdown-item" href="/">Action</a></li>
+                                        <li><a className="dropdown-item" href="/">Another action</a></li>
                                         <li><hr className="dropdown-divider" /></li>
-                                        <li><a className="dropdown-item" href="#">Separated link</a></li>
+                                        <li><a className="dropdown-item" href="/">Separated link</a></li>
                                         </ul>
                                     </div>
                                     </div>
@@ -415,8 +415,8 @@ import ModalComponent from "../components/ModalComponent";
                                     <div className="bd-example">
                                     <nav aria-label="breadcrumb">
                                     <ol className="breadcrumb">
-                                        <li className="breadcrumb-item"><a href="#">Home</a></li>
-                                        <li className="breadcrumb-item"><a href="#">Library</a></li>
+                                        <li className="breadcrumb-item"><a href="/">Home</a></li>
+                                        <li className="breadcrumb-item"><a href="/">Library</a></li>
                                         <li className="breadcrumb-item active" aria-current="page">Data</li>
                                     </ol>
                                     </nav>
@@ -458,35 +458,35 @@ import ModalComponent from "../components/ModalComponent";
                                     <div className="bd-example">
                                     
                                     <div className="alert alert-primary alert-dismissible fade show" role="alert">
-                                    A simple primary alert with <a href="#" className="alert-link">an example link</a>. Give it a click if you like.
+                                    A simple primary alert with <a href="/" className="alert-link">an example link</a>. Give it a click if you like.
                                     <button type="button" className="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                                     </div>
                                     <div className="alert alert-secondary alert-dismissible fade show" role="alert">
-                                    A simple secondary alert with <a href="#" className="alert-link">an example link</a>. Give it a click if you like.
+                                    A simple secondary alert with <a href="/" className="alert-link">an example link</a>. Give it a click if you like.
                                     <button type="button" className="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                                     </div>
                                     <div className="alert alert-success alert-dismissible fade show" role="alert">
-                                    A simple success alert with <a href="#" className="alert-link">an example link</a>. Give it a click if you like.
+                                    A simple success alert with <a href="/" className="alert-link">an example link</a>. Give it a click if you like.
                                     <button type="button" className="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                                     </div>
                                     <div className="alert alert-danger alert-dismissible fade show" role="alert">
-                                    A simple danger alert with <a href="#" className="alert-link">an example link</a>. Give it a click if you like.
+                                    A simple danger alert with <a href="/" className="alert-link">an example link</a>. Give it a click if you like.
                                     <button type="button" className="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                                     </div>
                                     <div className="alert alert-warning alert-dismissible fade show" role="alert">
-                                    A simple warning alert with <a href="#" className="alert-link">an example link</a>. Give it a click if you like.
+                                    A simple warning alert with <a href="/" className="alert-link">an example link</a>. Give it a click if you like.
                                     <button type="button" className="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                                     </div>
                                     <div className="alert alert-info alert-dismissible fade show" role="alert">
-                                    A simple info alert with <a href="#" className="alert-link">an example link</a>. Give it a click if you like.
+                                    A simple info alert with <a href="/" className="alert-link">an example link</a>. Give it a click if you like.
                                     <button type="button" className="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                                     </div>
                                     <div className="alert alert-light alert-dismissible fade show" role="alert">
-                                    A simple light alert with <a href="#" className="alert-link">an example link</a>. Give it a click if you like.
+                                    A simple light alert with <a href="/" className="alert-link">an example link</a>. Give it a click if you like.
                                     <button type="button" className="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                                     </div>
                                     <div className="alert alert-dark alert-dismissible fade show" role="alert">
-                                    A simple dark alert with <a href="#" className="alert-link">an example link</a>. Give it a click if you like.
+                                    A simple dark alert with <a href="/" className="alert-link">an example link</a>. Give it a click if you like.
                                     <button type="button" className="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                                     </div>
                                     </div>
@@ -529,7 +529,7 @@ import ModalComponent from "../components/ModalComponent";
                             </p>
                             </div>
                             <small className="d-block text-end mt-3">
-                            <a href="#">All updates</a>
+                            <a href="/">All updates</a>
                             </small>
                         </div>
         
@@ -541,7 +541,7 @@ import ModalComponent from "../components/ModalComponent";
                                 <div className="pb-3 mb-0 small lh-sm border-bottom w-100">
                                     <div className="d-flex justify-content-between">
                                     <strong className="text-gray-dark">Full Name</strong>
-                                    <a href="#">Follow</a>
+                                    <a href="/">Follow</a>
                                     </div>
                                     <span className="d-block">@username</span>
                                 </div>
@@ -552,7 +552,7 @@ import ModalComponent from "../components/ModalComponent";
                                 <div className="pb-3 mb-0 small lh-sm border-bottom w-100">
                                     <div className="d-flex justify-content-between">
                                     <strong className="text-gray-dark">Full Name</strong>
-                                    <a href="#">Follow</a>
+                                    <a href="/">Follow</a>
                                     </div>
                                     <span className="d-block">@username</span>
                                 </div>
@@ -563,13 +563,13 @@ import ModalComponent from "../components/ModalComponent";
                                 <div className="pb-3 mb-0 small lh-sm border-bottom w-100">
                                     <div className="d-flex justify-content-between">
                                     <strong className="text-gray-dark">Full Name</strong>
-                                    <a href="#">Follow</a>
+                                    <a href="/">Follow</a>
                                     </div>
                                     <span className="d-block">@username</span>
                                 </div>
                                 </div>
                                 <small className="d-block text-end mt-3">
-                                <a href="#">All suggestions</a>
+                                <a href="/">All suggestions</a>
                                 </small>
                             </div>
         

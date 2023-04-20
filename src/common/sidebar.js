@@ -26,12 +26,12 @@ class Sidebar extends React.Component {
                     </li>
                     <li className="mb-1">
                         <Link tag="a" className="" to="/universomarvel">
-                             Univeso Marvel
+                            Univeso Marvel
                         </Link>
                     </li>
                     <li className="mb-1">
-                        <Link tag="a" className="" to="/viloessmarvel">
-                            Vilões Marvel
+                        <Link tag="a" className="" to="/lancamento">
+                            Lançamento
                         </Link>
                     </li>
                     <li className="mb-1">
@@ -42,6 +42,11 @@ class Sidebar extends React.Component {
                     <li className="mb-1">
                         <Link tag="a" className="" to="/cadastrodepersonagem">
                              Cadastro de Personagem
+                        </Link>
+                    </li>
+                    <li className="mb-1">
+                        <Link tag="a" className="" to="/rotadeheroes">
+                            Rota de Herões
                         </Link>
                     </li>
                     <li className="border-top my-3"></li>
@@ -58,10 +63,10 @@ class Sidebar extends React.Component {
                         </button>
                         <div className="collapse" id="dashboard-collapse">
                         <ul className="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                            <li><a href="#" className="rounded">Overview</a></li>
-                            <li><a href="#" className="rounded">Weekly</a></li>
-                            <li><a href="#" className="rounded">Monthly</a></li>
-                            <li><a href="#" className="rounded">Annually</a></li>
+                            <li><a href="/" className="rounded">Overview</a></li>
+                            <li><a href="/" className="rounded">Weekly</a></li>
+                            <li><a href="/" className="rounded">Monthly</a></li>
+                            <li><a href="/" className="rounded">Annually</a></li>
                         </ul>
                         </div>
                     </li> 
@@ -70,7 +75,7 @@ class Sidebar extends React.Component {
                 </ul>
             </PerfectScrollbar>
             <div className="dropdown fixed-bottom-dropdown">
-                <a href="#" className="d-flex align-items-center text-decoration-none dropdown-toggle" id="dropdownUser2" data-bs-toggle="dropdown" aria-expanded="false">
+                <a href="replace" className="d-flex align-items-center text-decoration-none dropdown-toggle" id="dropdownUser2" data-bs-toggle="dropdown" aria-expanded="false">
                     <img src="https://via.placeholder.com/50" alt="" width="32" height="32" className="rounded-circle me-2" />
                     <span>Tarun Dhiman</span>
                 </a>

@@ -6,31 +6,22 @@ Loading Effect
 ![Login page screenshot](/screenshots/loading.png)
 
 Login page screenshot
-![Login page screenshot](/screenshots/login.png)
+![Login page screenshot](/screenshots/image.png)
 
 Forgot password page screenshot
-![Forgot password page screenshot](/screenshots/forgot-password.png)
+![Forgot password page screenshot](/screenshots/image1.png)
 
 Dashboard page screenshot
-![Dashboard page screenshot](/screenshots/dashboard.png)
+![Dashboard page screenshot](/screenshots/image2.png)
 
 Left modal page screenshot
-![Left modal page screenshot](/screenshots/left-modal.png)
-
-Right modal page screenshot
-![Right modal page screenshot](/screenshots/right-modal.png)
-
-Table page screenshot
-![Table page screenshot](/screenshots/table.png)
+![Left modal page screenshot](/screenshots/image3.png)
 
 Profile page screenshot
-![Profile page screenshot](/screenshots/profile.png)
-
-Change Password page screenshot
-![Change Password page screenshot](/screenshots/change-password.png)
+![Profile page screenshot](/screenshots/image4.png)
 
 Blank Admin page screenshot
-![Blank Admin page screenshot](/screenshots/blank-page.png)
+![Blank Admin page screenshot](/screenshots/image5.png)
 
 ## Prerequisite
 

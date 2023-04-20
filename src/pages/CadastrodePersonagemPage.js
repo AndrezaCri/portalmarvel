@@ -1,147 +1,155 @@
-import React from "react";
+import React, { useEffect, useState  } from "react";
 import adminLayout from "../hoc/adminLayout";
-import {useState} from "react-hook-form"
+import { useFormInputValidation } from "react-form-input-validation";
 
+const ValidationForm2 = () => {
+    const [isDisabled, setDisabled] = useState(true);
 
+    const [fields, errors, form] = useFormInputValidation({
+      nomePersonagem: "",
+      habilidade: [],
+      historia: "",
+      idade: ""
+    }, {
+      nomePersonagem: "required|min:4",
+      habilidade: "required|array",
+      historia:"required|max:500",
+      idade: "required"
+    });
 
-class CadastrodePersonagemPage extends React.Component {
-    constructor(props){
-        super(props);
-
-        this.state = {
-            name:"andreza",
-            habilidade:"ataque",
-            textarea:"historia",
-            forca:true,
-            vitalidade:true,
-            estrategia:true,
-            idade:100,
-        };
-        this.handleChange = this.handleChange.bind(this);
-        this.handleSubmit = this.handleSubmit.bind(this);
-        this.handleInputChange = this.handleInputChange.bind(this);
-        this.state = {isLoggedIn: false};
-
-    };
-        handleChange(event) {
-            this.setState({value: event.target.value});
+    
+    const onSubmit = async (event) => {
+        const isValid = await form.validate(event);
+        if (isValid) {
+            setDisabled(false);
+        }else{
+            setDisabled(true);
         }
-        handleSubmit(event) {
-            this.setState({isLoggedIn: true});
-            event.preventDefault();   
-            console.log(event)  
-             
+    }
+
+    useEffect(() => {
+        if (form.isValidForm) {
+          console.log("MAKE AN API CALL ==> useEffect", fields, errors, form);
         }
+    }, [])
       
-      
-        handleInputChange(event) {
-        const target = event.target;
-        const value = target.type === 'checkbox' ? target.checked : target.value;
-        const name = target.name;
-
-        this.setState({
-          [name]: value,
-          
-        });
-    };
-
-    render(){
-        const isLoggedIn = () =>{
-            const [form] = (['input']);
-        
-        return <>
+        return<div>
             <h1 className="titulo-marvel">Cadastro de Personagem</h1>
             
             <div className="my-3 p-3 bg-body rounded shadow-sm">
                     <h5 className="border-bottom pb-black mb-0 mb-3">Informação do Personagem</h5>
-                        <form onSubmit={this.handleSubmit}>
-                        {form === "input"};
+                        <form className="myForm"
+                            noValidate
+                            autoComplete="off"
+                            onChange={onSubmit}
+                            onSubmit={onSubmit}>
+                        
                             <div className="row">
                                 <div className="col">
                                     <label htmlFor="exampleInputEmail1" className="form-label">Nome:</label>
                                     <div className="input-group mb-3">
                                         <input 
                                         type="text" className="form-control form-check" id="validationServer01" 
-                                        minLength={4} maxLength={20} name="nome" value="Submit"
-                                        placeholder="Nome do Personagem" required 
-                                        aria-label="Recipient's username" aria-describedby="basic-addon2" 
-                                        onChange={this.handleChange}/>
+                                        placeholder="Nome do Personagem" name="nomePersonagem"
+                                        aria-label="Recipient's username" aria-describedby="basic-addon2"
+                                        onBlur={form.handleBlurEvent}
+                                        onChange={form.handleChangeEvent}
+                                        value={fields.nomePersonagem}
+                                        />
                                     </div>
-                                    <div className="invalid-feedback">Please provide a valid city.</div>
+                                    <div className="error">
+                                        {errors.nomePersonagem ? 'Campo obrigatorio, favor preencher!' : ""}
+                                    </div>
                                 </div>
                                     
-                                <div className="col">
-                                    <label htmlFor="exampleInputEmail1" className="form-label">Habilidade</label>
-                                    <div className="input-group mb-3">
-                                        <input 
-                                        type="text" className="form-control" placeholder="Habilidade" 
-                                        aria-label="Recipient's username" aria-describedby="basic-addon2"
-                                        required minLength={4} name="habilidade" onChange={this.handleChange}/>
-                                    </div>
-                                </div>
                                 <label htmlFor="exampleInputEmail1" className="form-label">História do Personagem</label>
                                         <div className="input-group mb-3">
                                             <textarea 
-                                                onChange={this.handleChange}
                                                 type="text" id="formHistoria" className="form-control" 
-                                                minLength={4} maxLength={500} required
+                                                minLength={4} maxLength={500} 
                                                 placeholder="História do Personagem" 
                                                 aria-label="Recipient's username" aria-describedby="basic-addon2" 
-                                                name="historia" cols="50" rows="8">
-                                            </textarea>                                    
-                                        </div>    
+                                                name="historia" cols="50" rows="8"
+                                                onBlur={form.handleBlurEvent}
+                                                onChange={form.handleChangeEvent}
+                                                value={fields.historia}>
+                                            </textarea>   
+                                        </div>  
+                                        <div className="error">
+                                            {errors.historia ? 'Campo obrigatorio, favor preencher!' : ""}
+                                        </div>
+
                                 <div className="col-md-4">
-                                    <label htmlFor="exampleInputEmail1" className="form-label">Idade</label>
+                                    <label htmlFor="exampleInputEmail1" className="form-label">Idade:</label>
                                     <div className="input-group mb-3">
-                                        <input onChange={this.handleChange}
+                                        <input 
                                             type="number" className="form-control" placeholder="idade"
-                                            aria-label="Recipient's username" aria-describedby="basic-addon2" 
-                                            required name="idade" maxLength={100}/>
+                                            aria-label="Recipient's username" aria-describedby="basic-addon2" name="idade"
+                                            onBlur={form.handleBlurEvent}
+                                            onChange={form.handleChangeEvent}
+                                            value={fields.idade}
+                                        />
+                                       
                                     </div>
+                                    <div className="error">
+                                        {errors.idade ? 'Campo obrigatorio, favor preencher' : ""}
+                                    </div>  
                                 </div>                                                                      
-                            </div>                       
-                            <div className="mb-3 col  form-check" 
-                                checked={this.state.forca}
-                                onChange={this.handleInputChange}>
-                                <input   type="checkbox" className="form-check-input" 
-                                            id="exampleCheck1" 
-                                            required name="forca"/>
+                            </div> 
+                            <div className="colmb-3 col">
+                                <label className="form-label">Habilidade:</label>
+                            </div>
+                            <div className="colmb-3 col  form-check">
+                               <input type="checkbox" className="form-check-input" 
+                                    id="exampleCheck1" 
+                                    name="habilidade"
+                                    onChange={form.handleChangeEvent}
+                                    value="Vitalidade"
+                                />
                                 <label className="form-check-label" htmlFor="exampleCheck1">Força</label>
                             </div>
-                            <div className="mb-3 col  form-check"
-                                checked={this.state.vitalidade}
-                                onChange={this.handleInputChange}>
-                                <input   type="checkbox" className="form-check-input" 
-                                            id="exampleCheck2" 
-                                            required name="vitalidade"/>
+                            
+                            <div className="colmb-3 col  form-check">
+                                <input type="checkbox" className="form-check-input" 
+                                    id="exampleCheck2" 
+                                    required name="habilidade"
+                                    onChange={form.handleChangeEvent}
+                                    value="Forca"
+                                />
                                 <label className="form-check-label" htmlFor="exampleCheck1">Vitalidade</label>
                             </div>
-                            <div className="mb-3 col  form-check"
-                            checked={this.state.estrategia}
-                            onChange={this.handleInputChange}>
-                                <input   type="checkbox" className="form-check-input" 
-                                            id="exampleCheck3" required name="estrategia"  />
+                            
+                            <div className="colmb-3 col  form-check">   
+                                <input type="checkbox" className="form-check-input" 
+                                    id="exampleCheck3" 
+                                    required name="habilidade"
+                                    onChange={form.handleChangeEvent}
+                                    value="Vitalidade"
+                                />
                                 <label className="form-check-label" htmlFor="exampleCheck1">Estratégia</label>
-                            </div>                
-                            <div className="mb-3" checked={this.state.foto}
-                                onChange={this.handleInputChange}>
+                            </div>         
+                            <div className="error">
+                                {errors.habilidade ? 'Campo obrigatorio, favor preencher!' : ""}
+                            </div>   
+
+                            <div className="mb-3">
                                 <label  className="form-label" htmlFor="disabledCustomFile">Upload Foto</label>
                                 <input  type="file" className="form-control" id="disabledCustomFile" 
                                     disabled=""  required name="foto"/>
                             </div>
 
-                            <button type="submit"  isLoggedIn={isLoggedIn} 
-                                className="row btn btn-dark moz submit-invalid" 
-                                name="cadastrar" disabled="false" required
-                                >Cadastras
+                            <button type="submit" className="row btn btn-dark moz submit-invalid" 
+                                name="cadastrar"  disabled={isDisabled}>cadastrar
                             </button>
                         </form>    
+                        
             </div>
+            
+            
+        </div>
+  
     
-        </>
-    }};
-
      
 };
 
-export default adminLayout(CadastrodePersonagemPage);
+export default adminLayout(ValidationForm2);
